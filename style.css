@@ -56,6 +56,10 @@ a:hover {
     padding: 20px 50px;
 }
 
+.bloc-lg__p {
+    font-size: 13px;
+}
+
 .bg-center,
 .bg-l-edge,
 .bg-r-edge,
@@ -88,11 +92,6 @@ a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -284,7 +283,10 @@ a:hover {
 }
 
 #bloc-1-hero h1 {
-    font-size: 32px;
+    font-size: 27px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(55, 55, 55, 0.7);
 }
 
 .navbar {
@@ -326,6 +328,9 @@ a:hover {
     float: left;
     margin-top: 4px;
     font-size: 16px;
+    list-style-type: none;
+    padding-right: 35px;
+    text-decoration: none;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -438,6 +443,11 @@ nav .caret {
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.mg-md__p {
+    font-size: 13px;
 }
 
 .mg-lg {
@@ -533,13 +543,18 @@ button {
 
 blockquote {
     color: #373737;
+    font-size: 20px;
+}
+
+cite {
+    color: #727272;
+    font-size: 15px;
 }
 
 a[data-lightbox] {
     position: relative;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 a[data-lightbox]:hover::before {
@@ -557,6 +572,7 @@ a[data-lightbox]:hover::before {
     z-index: 1;
     position: absolute;
     top: 50%;
+    left: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
@@ -661,10 +677,6 @@ a {
     color: #575757 !important;
 }
 
-.container {
-    max-width: 1000px;
-}
-
 .hero-bloc-text {
     font-size: 38px;
 }
@@ -724,7 +736,7 @@ h3 {
 }
 
 .med-width-whitespace {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
@@ -744,6 +756,7 @@ h4 {
 
 .white {
     color: #ffffff !important;
+    font-size: 15px;
 }
 
 .portfolio-thumb {
@@ -760,7 +773,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(55, 55, 55, 0.7);
     padding: 40px 40px 40px 40px;
 }
 
@@ -773,21 +786,18 @@ h4 {
     background-color: #ffffff;
 }
 
-.bgc-dark-slate-blue {
-    background-color: #364577;
-}
-
 .bgc-atomic-tangerine {
-    background-color: #f3976c;
+    background-color: #373737;
 }
 
 .tc-white {
     color: #ffffff !important;
+    text-align: center;
 }
 
 .btn-atomic-tangerine {
     background: #f3976c;
-    color: #ffffff !important;
+    color: #373737 !important;
 }
 
 .btn-atomic-tangerine:hover {
